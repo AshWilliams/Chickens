@@ -29,6 +29,17 @@
 		BB3B910F1E8130A1000855E4 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB3B910E1E8130A1000855E4 /* Settings.plist */; };
 		BB3B91101E8130A1000855E4 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB3B910E1E8130A1000855E4 /* Settings.plist */; };
 		BB3B91111E8130A1000855E4 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB3B910E1E8130A1000855E4 /* Settings.plist */; };
+		BB3B91141E8134EA000855E4 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3B91131E8134EA000855E4 /* libxml2.2.tbd */; };
+		BB3B911E1E813541000855E4 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3B91191E813541000855E4 /* TFHpple.m */; };
+		BB3B911F1E813541000855E4 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3B91191E813541000855E4 /* TFHpple.m */; };
+		BB3B91201E813541000855E4 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3B91191E813541000855E4 /* TFHpple.m */; };
+		BB3B91211E813541000855E4 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3B911B1E813541000855E4 /* TFHppleElement.m */; };
+		BB3B91221E813541000855E4 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3B911B1E813541000855E4 /* TFHppleElement.m */; };
+		BB3B91231E813541000855E4 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3B911B1E813541000855E4 /* TFHppleElement.m */; };
+		BB3B91241E813541000855E4 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3B911D1E813541000855E4 /* XPathQuery.m */; };
+		BB3B91251E813541000855E4 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3B911D1E813541000855E4 /* XPathQuery.m */; };
+		BB3B91261E813541000855E4 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3B911D1E813541000855E4 /* XPathQuery.m */; };
+		BB3B91291E813899000855E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3B91281E813899000855E4 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +75,17 @@
 		BB3B91061E812B23000855E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Support/Assets.xcassets; sourceTree = "<group>"; };
 		BB3B910A1E812B2D000855E4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Support/Info.plist; sourceTree = "<group>"; };
 		BB3B910E1E8130A1000855E4 /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Settings.plist; path = Support/Settings.plist; sourceTree = "<group>"; };
+		BB3B91131E8134EA000855E4 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		BB3B91151E813540000855E4 /* Chickens-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chickens-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		BB3B91161E813540000855E4 /* ChickensTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChickensTests-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		BB3B91171E813540000855E4 /* ChickensUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChickensUITests-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		BB3B91181E813541000855E4 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFHpple.h; path = Chickens/Helpers/TFHpple/TFHpple.h; sourceTree = "<group>"; };
+		BB3B91191E813541000855E4 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFHpple.m; path = Chickens/Helpers/TFHpple/TFHpple.m; sourceTree = "<group>"; };
+		BB3B911A1E813541000855E4 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFHppleElement.h; path = Chickens/Helpers/TFHpple/TFHppleElement.h; sourceTree = "<group>"; };
+		BB3B911B1E813541000855E4 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFHppleElement.m; path = Chickens/Helpers/TFHpple/TFHppleElement.m; sourceTree = "<group>"; };
+		BB3B911C1E813541000855E4 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XPathQuery.h; path = Chickens/Helpers/TFHpple/XPathQuery.h; sourceTree = "<group>"; };
+		BB3B911D1E813541000855E4 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XPathQuery.m; path = Chickens/Helpers/TFHpple/XPathQuery.m; sourceTree = "<group>"; };
+		BB3B91281E813899000855E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB3B91291E813899000855E4 /* Foundation.framework in Frameworks */,
+				BB3B91141E8134EA000855E4 /* libxml2.2.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +122,7 @@
 				2A55E9391E8121AC00B48E8B /* ChickensTests */,
 				2A55E9441E8121AC00B48E8B /* ChickensUITests */,
 				2A55E9231E8121AC00B48E8B /* Products */,
+				BB3B91121E8134EA000855E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +177,7 @@
 		BB3B90F61E812A46000855E4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				BB3B91271E81354D000855E4 /* TFHpple */,
 				BB3B90FA1E812AE9000855E4 /* PriceUpdater.swift */,
 			);
 			name = Helpers;
@@ -165,6 +191,9 @@
 				BB3B91021E812B1D000855E4 /* AppDelegate.swift */,
 				BB3B91061E812B23000855E4 /* Assets.xcassets */,
 				BB3B910A1E812B2D000855E4 /* Info.plist */,
+				BB3B91151E813540000855E4 /* Chickens-Bridging-Header.h */,
+				BB3B91161E813540000855E4 /* ChickensTests-Bridging-Header.h */,
+				BB3B91171E813540000855E4 /* ChickensUITests-Bridging-Header.h */,
 			);
 			name = Support;
 			sourceTree = "<group>";
@@ -183,6 +212,28 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		BB3B91121E8134EA000855E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB3B91281E813899000855E4 /* Foundation.framework */,
+				BB3B91131E8134EA000855E4 /* libxml2.2.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB3B91271E81354D000855E4 /* TFHpple */ = {
+			isa = PBXGroup;
+			children = (
+				BB3B91181E813541000855E4 /* TFHpple.h */,
+				BB3B91191E813541000855E4 /* TFHpple.m */,
+				BB3B911A1E813541000855E4 /* TFHppleElement.h */,
+				BB3B911B1E813541000855E4 /* TFHppleElement.m */,
+				BB3B911C1E813541000855E4 /* XPathQuery.h */,
+				BB3B911D1E813541000855E4 /* XPathQuery.m */,
+			);
+			name = TFHpple;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,17 +304,20 @@
 				TargetAttributes = {
 					2A55E9211E8121AC00B48E8B = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					2A55E9351E8121AC00B48E8B = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = GW3T8PV6PN;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2A55E9211E8121AC00B48E8B;
 					};
 					2A55E9401E8121AC00B48E8B = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = GW3T8PV6PN;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2A55E9211E8121AC00B48E8B;
 					};
@@ -332,6 +386,9 @@
 				BB3B91031E812B1D000855E4 /* AppDelegate.swift in Sources */,
 				BB3B90FF1E812B14000855E4 /* ViewController.swift in Sources */,
 				BB3B90FB1E812AE9000855E4 /* PriceUpdater.swift in Sources */,
+				BB3B911E1E813541000855E4 /* TFHpple.m in Sources */,
+				BB3B91241E813541000855E4 /* XPathQuery.m in Sources */,
+				BB3B91211E813541000855E4 /* TFHppleElement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +396,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB3B91221E813541000855E4 /* TFHppleElement.m in Sources */,
+				BB3B91251E813541000855E4 /* XPathQuery.m in Sources */,
+				BB3B911F1E813541000855E4 /* TFHpple.m in Sources */,
 				BB3B91041E812B1D000855E4 /* AppDelegate.swift in Sources */,
 				BB3B91001E812B14000855E4 /* ViewController.swift in Sources */,
 				2A55E93B1E8121AC00B48E8B /* ChickensTests.swift in Sources */,
@@ -350,6 +410,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB3B91231E813541000855E4 /* TFHppleElement.m in Sources */,
+				BB3B91261E813541000855E4 /* XPathQuery.m in Sources */,
+				BB3B91201E813541000855E4 /* TFHpple.m in Sources */,
 				BB3B91051E812B1D000855E4 /* AppDelegate.swift in Sources */,
 				BB3B91011E812B14000855E4 /* ViewController.swift in Sources */,
 				2A55E9461E8121AC00B48E8B /* ChickensUITests.swift in Sources */,
@@ -487,11 +550,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = Chickens/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = superstartup.Chickens;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Chickens-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -500,11 +567,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = Chickens/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = superstartup.Chickens;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Chickens-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -514,11 +584,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = GW3T8PV6PN;
 				INFOPLIST_FILE = ChickensTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = superstartup.ChickensTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChickensTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chickens.app/Chickens";
 			};
@@ -529,11 +602,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = GW3T8PV6PN;
 				INFOPLIST_FILE = ChickensTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = superstartup.ChickensTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChickensTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chickens.app/Chickens";
 			};
@@ -543,11 +618,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = GW3T8PV6PN;
 				INFOPLIST_FILE = ChickensUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = superstartup.ChickensUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChickensUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Chickens;
 			};
@@ -557,11 +635,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = GW3T8PV6PN;
 				INFOPLIST_FILE = ChickensUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = superstartup.ChickensUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChickensUITests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Chickens;
 			};
