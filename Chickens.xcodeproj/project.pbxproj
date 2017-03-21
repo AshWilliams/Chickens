@@ -26,6 +26,9 @@
 		BB3B910B1E812B2D000855E4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB3B910A1E812B2D000855E4 /* Info.plist */; };
 		BB3B910C1E812B2D000855E4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB3B910A1E812B2D000855E4 /* Info.plist */; };
 		BB3B910D1E812B2D000855E4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB3B910A1E812B2D000855E4 /* Info.plist */; };
+		BB3B910F1E8130A1000855E4 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB3B910E1E8130A1000855E4 /* Settings.plist */; };
+		BB3B91101E8130A1000855E4 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB3B910E1E8130A1000855E4 /* Settings.plist */; };
+		BB3B91111E8130A1000855E4 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB3B910E1E8130A1000855E4 /* Settings.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,7 @@
 		BB3B91021E812B1D000855E4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Support/AppDelegate.swift; sourceTree = "<group>"; };
 		BB3B91061E812B23000855E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Support/Assets.xcassets; sourceTree = "<group>"; };
 		BB3B910A1E812B2D000855E4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Support/Info.plist; sourceTree = "<group>"; };
+		BB3B910E1E8130A1000855E4 /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Settings.plist; path = Support/Settings.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,7 @@
 		BB3B90F71E812A57000855E4 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				BB3B910E1E8130A1000855E4 /* Settings.plist */,
 				BB3B91021E812B1D000855E4 /* AppDelegate.swift */,
 				BB3B91061E812B23000855E4 /* Assets.xcassets */,
 				BB3B910A1E812B2D000855E4 /* Info.plist */,
@@ -293,6 +298,7 @@
 				2A55E9301E8121AC00B48E8B /* LaunchScreen.storyboard in Resources */,
 				BB3B91071E812B23000855E4 /* Assets.xcassets in Resources */,
 				2A55E92B1E8121AC00B48E8B /* Main.storyboard in Resources */,
+				BB3B910F1E8130A1000855E4 /* Settings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +308,7 @@
 			files = (
 				BB3B910C1E812B2D000855E4 /* Info.plist in Resources */,
 				BB3B91081E812B23000855E4 /* Assets.xcassets in Resources */,
+				BB3B91101E8130A1000855E4 /* Settings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +318,7 @@
 			files = (
 				BB3B910D1E812B2D000855E4 /* Info.plist in Resources */,
 				BB3B91091E812B23000855E4 /* Assets.xcassets in Resources */,
+				BB3B91111E8130A1000855E4 /* Settings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

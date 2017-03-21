@@ -8,8 +8,6 @@
 
 import UIKit
 
-let chickenPrice = 3.85
-
 class ViewController: UIViewController {
 
     @IBOutlet weak var chickenTextfield: UITextField! {
@@ -37,7 +35,7 @@ extension ViewController: UITextFieldDelegate {
             let currentString = (textField.text as NSString?)?.replacingCharacters(in: range, with: string) ?? string
             let sum = Double(currentString)
             if let sum = sum {
-                chickenTextfield.text = "\(sum / chickenPrice)"
+                chickenTextfield.text = "\(sum / PriceUpdater.sharedInstance.price)"
             } else {
                 chickenTextfield.text = "\(0)"
             }
