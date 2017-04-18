@@ -1,5 +1,5 @@
 //
-//  PriceUpdater.swift
+//  PriceService.swift
 //  Chickens
 //
 //  Created by Aleksey Gorbachevskiy on 21/03/17.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-final class PriceUpdater {
+final class PriceService {
     
     private init() { }
     
     //MARK: Shared Instance
     
-    static let sharedInstance: PriceUpdater = PriceUpdater()
+    static let shared: PriceService = PriceService()
     
     private var _settings: NSMutableDictionary?
     private var settings: NSMutableDictionary? {

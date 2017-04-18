@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RootViewController.swift
 //  Chickens
 //
 //  Created by Alexander Yakovlev on 3/21/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RootViewController: UIViewController {
 
     @IBOutlet weak var chickenTextfield: UITextField! {
         didSet {
@@ -17,7 +17,8 @@ class ViewController: UIViewController {
     }
     @IBOutlet weak var sumTextfield: UITextField! {
         didSet {
-            sumTextfield.text = "\(0)"
+            sumTextfield.text = ""
+            sumTextfield.becomeFirstResponder()
         }
     }
     
@@ -29,13 +30,13 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITextFieldDelegate {
+extension RootViewController: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if textField == sumTextfield {
             let currentString = (textField.text as NSString?)?.replacingCharacters(in: range, with: string) ?? string
             let sum = Double(currentString)
             if let sum = sum {
-                chickenTextfield.text = "\(sum / PriceUpdater.sharedInstance.price)"
+                chickenTextfield.text = "\(round(10 * sum / PriceService.shared.price) / 10)"
             } else {
                 chickenTextfield.text = "\(0)"
             }
