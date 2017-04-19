@@ -7,8 +7,8 @@ target 'Chickens' do
 
   pod 'Money'
  #pod 'MoneyFX'
-  pod 'Alamofire'
   pod 'Moya'
+  pod 'Moya-SwiftyJSONMapper'
 
   target 'ChickensTests' do
     inherit! :search_paths

@@ -34,12 +34,7 @@ extension RootViewController: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if textField == sumTextfield {
             let currentString = (textField.text as NSString?)?.replacingCharacters(in: range, with: string) ?? string
-            let sum = Double(currentString)
-            if let sum = sum {
-                chickenTextfield.text = "\(round(10 * sum / PriceService.shared.price) / 10)"
-            } else {
-                chickenTextfield.text = "\(0)"
-            }
+            chickenTextfield.text = CountService.shared.chickensFrom(sum: Double(currentString)!)
             return true
         } else {
             return false

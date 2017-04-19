@@ -11,10 +11,12 @@
 		2A55E9301E8121AC00B48E8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A55E92E1E8121AC00B48E8B /* LaunchScreen.storyboard */; };
 		2A55E93B1E8121AC00B48E8B /* ChickensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A55E93A1E8121AC00B48E8B /* ChickensTests.swift */; };
 		2A55E9461E8121AC00B48E8B /* ChickensUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A55E9451E8121AC00B48E8B /* ChickensUITests.swift */; };
+		2A60C6051EA7694C00F0BCFB /* CountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A60C6041EA7694C00F0BCFB /* CountService.swift */; };
 		2A7376341EA618890026C299 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7376331EA618890026C299 /* RootViewController.swift */; };
 		2A73763E1EA618FC0026C299 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7376391EA618FC0026C299 /* TFHpple.m */; };
 		2A73763F1EA618FC0026C299 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A73763B1EA618FC0026C299 /* TFHppleElement.m */; };
 		2A7376401EA618FC0026C299 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A73763D1EA618FC0026C299 /* XPathQuery.m */; };
+		2A7376421EA622500026C299 /* CurrencyExchangeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7376411EA622500026C299 /* CurrencyExchangeService.swift */; };
 		3AC4CC9AB508F90F5772B702 /* Pods_ChickensUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B185DAEC52F2E497C6FEFF56 /* Pods_ChickensUITests.framework */; };
 		ADF55636705670CEF49A6DDA /* Pods_ChickensTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0797D9BE90C100A51C1C334A /* Pods_ChickensTests.framework */; };
 		BB3B90FB1E812AE9000855E4 /* PriceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3B90FA1E812AE9000855E4 /* PriceService.swift */; };
@@ -65,6 +67,7 @@
 		2A55E9411E8121AC00B48E8B /* ChickensUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChickensUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A55E9451E8121AC00B48E8B /* ChickensUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickensUITests.swift; sourceTree = "<group>"; };
 		2A55E9471E8121AC00B48E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A60C6041EA7694C00F0BCFB /* CountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountService.swift; path = Chickens/Helpers/CountService.swift; sourceTree = "<group>"; };
 		2A7376331EA618890026C299 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootViewController.swift; path = Controller/RootViewController.swift; sourceTree = "<group>"; };
 		2A7376381EA618FC0026C299 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFHpple.h; path = 3rdParty/TFHpple/TFHpple.h; sourceTree = "<group>"; };
 		2A7376391EA618FC0026C299 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFHpple.m; path = 3rdParty/TFHpple/TFHpple.m; sourceTree = "<group>"; };
@@ -72,6 +75,7 @@
 		2A73763B1EA618FC0026C299 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFHppleElement.m; path = 3rdParty/TFHpple/TFHppleElement.m; sourceTree = "<group>"; };
 		2A73763C1EA618FC0026C299 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XPathQuery.h; path = 3rdParty/TFHpple/XPathQuery.h; sourceTree = "<group>"; };
 		2A73763D1EA618FC0026C299 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XPathQuery.m; path = 3rdParty/TFHpple/XPathQuery.m; sourceTree = "<group>"; };
+		2A7376411EA622500026C299 /* CurrencyExchangeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrencyExchangeService.swift; path = Chickens/Helpers/CurrencyExchangeService.swift; sourceTree = "<group>"; };
 		73BAC3621F6A9D0A3DD0B637 /* Pods-ChickensUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChickensUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChickensUITests/Pods-ChickensUITests.release.xcconfig"; sourceTree = "<group>"; };
 		74672ADC3977D57AE0C226E5 /* Pods-Chickens.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chickens.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chickens/Pods-Chickens.release.xcconfig"; sourceTree = "<group>"; };
 		86DAC35EE4C7FFB36B39FDCD /* Pods_Chickens.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chickens.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,6 +235,8 @@
 			isa = PBXGroup;
 			children = (
 				BB3B90FA1E812AE9000855E4 /* PriceService.swift */,
+				2A7376411EA622500026C299 /* CurrencyExchangeService.swift */,
+				2A60C6041EA7694C00F0BCFB /* CountService.swift */,
 			);
 			name = Helpers;
 			path = ..;
@@ -561,7 +567,9 @@
 				2A7376341EA618890026C299 /* RootViewController.swift in Sources */,
 				2A73763E1EA618FC0026C299 /* TFHpple.m in Sources */,
 				2A7376401EA618FC0026C299 /* XPathQuery.m in Sources */,
+				2A7376421EA622500026C299 /* CurrencyExchangeService.swift in Sources */,
 				2A73763F1EA618FC0026C299 /* TFHppleElement.m in Sources */,
+				2A60C6051EA7694C00F0BCFB /* CountService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

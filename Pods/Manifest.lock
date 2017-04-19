@@ -4,24 +4,32 @@ PODS:
     - ValueCoding (~> 2)
   - Moya (8.0.3):
     - Moya/Core (= 8.0.3)
+  - Moya-SwiftyJSONMapper (2.2.0):
+    - Moya-SwiftyJSONMapper/Core (= 2.2.0)
+  - Moya-SwiftyJSONMapper/Core (2.2.0):
+    - Moya (~> 8.0.0)
+    - SwiftyJSON
   - Moya/Core (8.0.3):
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
   - Result (3.2.1)
+  - SwiftyJSON (3.1.4)
   - ValueCoding (2.1.0)
 
 DEPENDENCIES:
-  - Alamofire
   - Money
   - Moya
+  - Moya-SwiftyJSONMapper
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   Money: 6faa689f86c455112971c900e8a31fa0b9c02365
   Moya: d3721622e3cc0cc2f038d69a258686f0b66e7252
+  Moya-SwiftyJSONMapper: 03c9d3e562c9025c8c00fa3ec97ae1da61a2be37
   Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   ValueCoding: f18cd2f0c941c43e06669717ca25aeed02d702a9
 
-PODFILE CHECKSUM: 149203f15afbcdd623124a27d9406e609a976929
+PODFILE CHECKSUM: 199db7000bd8cdb2d9cabb9e3ccea24a62508c58
 
 COCOAPODS: 1.2.0
