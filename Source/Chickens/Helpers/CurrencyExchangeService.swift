@@ -10,12 +10,13 @@ import Foundation
 import Moya
 import Moya_SwiftyJSONMapper
 import SwiftyJSON
+import Money
 
 final class Rate : ALSwiftyJSONAble {
-    let value: String
+    let value: Money
     
     required init?(jsonData: JSON){
-        self.value = jsonData["results"]["BYN_USD"]["val"].stringValue
+        self.value = Money(jsonData["results"]["BYN_USD"]["val"].double!)
     }
     
 }
@@ -72,19 +73,20 @@ extension CurrencyExchange: TargetType {
 final class CurrencyExchangeService {
     static let shared: CurrencyExchangeService = CurrencyExchangeService()
     private let provider = MoyaProvider<CurrencyExchange>()
-    
+    var rate: Rate?
+
     func updateRate() {
         provider.request(.pair(from:"BYN", to:"USD")) { result in
             switch result {
             case let .success(moyaResponse):
                 do {
-                    let rate = try moyaResponse.map(to: Rate.self)
-                    print("[CurrencyExchangeService]: \(rate.value)")
+                    self.rate = try moyaResponse.map(to: Rate.self)
+                    print("[CurrencyExchangeService]: \(self.rate?.value.decimal)")
                 } catch {
                     print(error)
                 }
             case let .failure(error):
-                
+                print(error)
                 break
             }
         }

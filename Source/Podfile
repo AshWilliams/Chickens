@@ -9,6 +9,7 @@ target 'Chickens' do
  #pod 'MoneyFX'
   pod 'Moya'
   pod 'Moya-SwiftyJSONMapper'
+  pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
 
   target 'ChickensTests' do
     inherit! :search_paths
