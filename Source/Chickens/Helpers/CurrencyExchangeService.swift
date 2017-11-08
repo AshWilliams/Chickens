@@ -15,10 +15,13 @@ import Money
 final class Rate : ALSwiftyJSONAble {
     let value: Money
     
-    required init?(jsonData: JSON){
-        self.value = Money(jsonData["results"]["BYN_USD"]["val"].double!)
+    required init?(jsonData: JSON) {
+        if jsonData["results"]["BYN_USD"]["val"] != JSON.null {
+            self.value = Money(floatLiteral: jsonData["results"]["BYN_USD"]["val"].double!)
+        } else {
+            self.value = Money(floatLiteral: 0)
+        }
     }
-    
 }
 
 enum CurrencyExchange {
@@ -26,6 +29,10 @@ enum CurrencyExchange {
 }
 
 extension CurrencyExchange: TargetType {
+    var headers: [String : String]? {
+        return nil
+    }
+    
     var baseURL: URL {
         return URL(string: "http://free.currencyconverterapi.com/api/v3")!
     }
@@ -61,18 +68,33 @@ extension CurrencyExchange: TargetType {
     var task: Task {
         switch self {
         case .pair:
-            return .request
+            return .requestParameters(parameters: parameters!, encoding: parameterEncoding)
         }
     }
     
     public var sampleData: Data {
-        return Data()
+        switch self {
+        case .pair:
+            let jsonStr = "{\"query\":{\"count\":1},\"results\":{\"USD_BYN\":{\"fr\":\"USD\",\"id\":\"USD_BYN\",\"to\":\"BYN\",\"val\":1.919924}}}"
+            if let data = jsonStr.data(using: String.Encoding.utf8) {
+                return data
+            } else {
+                print("Couldn't serialize string")
+                return Data()
+            }
+        }
     }
 }
 
 final class CurrencyExchangeService {
-    static let shared: CurrencyExchangeService = CurrencyExchangeService()
+    
+    //Private
+    
     private let provider = MoyaProvider<CurrencyExchange>()
+
+    //Public
+    
+    static let shared: CurrencyExchangeService = CurrencyExchangeService()
     var rate: Rate?
 
     func updateRate() {

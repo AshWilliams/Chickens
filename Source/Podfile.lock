@@ -1,49 +1,55 @@
 PODS:
-  - Alamofire (4.4.0)
+  - Alamofire (4.5.1)
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
   - Money (2.0.1):
     - ValueCoding (~> 2)
-  - Moya (8.0.3):
-    - Moya/Core (= 8.0.3)
-  - Moya-SwiftyJSONMapper (2.2.0):
-    - Moya-SwiftyJSONMapper/Core (= 2.2.0)
-  - Moya-SwiftyJSONMapper/Core (2.2.0):
-    - Moya (~> 8.0.0)
+  - Moya (10.0.0):
+    - Moya/Core (= 10.0.0)
+  - Moya-SwiftyJSONMapper (3.0.0):
+    - Moya-SwiftyJSONMapper/Core (= 3.0.0)
+  - Moya-SwiftyJSONMapper/Core (3.0.0):
+    - Moya (~> 10.0)
     - SwiftyJSON
-  - Moya/Core (8.0.3):
+  - Moya/Core (10.0.0):
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
-  - Result (3.2.1)
+  - Result (3.2.4)
   - SwiftyJSON (3.1.4)
-  - ValueCoding (2.1.0)
+  - ValueCoding (2.2.0)
 
 DEPENDENCIES:
   - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
-  - Money
+  - Money (from `https://github.com/danthorpe/Money.git`, branch `feature/MNY-79_updates_for_xcode_9`)
   - Moya
   - Moya-SwiftyJSONMapper
 
 EXTERNAL SOURCES:
   ChameleonFramework:
     :git: https://github.com/ViccAlexander/Chameleon.git
+  Money:
+    :branch: feature/MNY-79_updates_for_xcode_9
+    :git: https://github.com/danthorpe/Money.git
 
 CHECKOUT OPTIONS:
   ChameleonFramework:
-    :commit: acc480fbe023c6e5fe40f68593f4a70a8c4c7ad5
+    :commit: 6dd284bde21ea2e7f9fd89bc36f40df16e16369d
     :git: https://github.com/ViccAlexander/Chameleon.git
+  Money:
+    :commit: ed9ae110eebb86f681423e26bfda4a4a4839b0e9
+    :git: https://github.com/danthorpe/Money.git
 
 SPEC CHECKSUMS:
-  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
-  Money: 6faa689f86c455112971c900e8a31fa0b9c02365
-  Moya: d3721622e3cc0cc2f038d69a258686f0b66e7252
-  Moya-SwiftyJSONMapper: 03c9d3e562c9025c8c00fa3ec97ae1da61a2be37
-  Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
+  Money: 3babd4c04fbf3251d30abe374a64fa8fed29ec64
+  Moya: adb58b0f4e58430db43cc6e2f6ebab1836501186
+  Moya-SwiftyJSONMapper: ceecd41a96b31ae4d17cd80a271a544563fe2c57
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
-  ValueCoding: f18cd2f0c941c43e06669717ca25aeed02d702a9
+  ValueCoding: dd37df7966fb14d5238c19e2f88c86ac4064ef96
 
-PODFILE CHECKSUM: 8b3a4e693f1f67e6f4cd6ebf8b010618edd28714
+PODFILE CHECKSUM: 4f43564de2c511a72e52310af6f1f38561559ec9
 
 COCOAPODS: 1.2.0

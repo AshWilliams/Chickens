@@ -8,6 +8,7 @@
 
 import UIKit
 import ChameleonFramework
+import Money
 
 class RootViewController: UIViewController {
     
@@ -39,7 +40,7 @@ class RootViewController: UIViewController {
         self.title = "Chickens"
         
         navigationController?.navigationBar.barTintColor = UIColor.flatSkyBlue
-        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.flatWhite]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.flatWhite]
     }
 }
 

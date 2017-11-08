@@ -15,8 +15,7 @@ final class CountService {
     
     func chickensFrom(sum: Double?) -> String {
         if let sum = sum, sum > 0 {
-            let sum = Money(sum)
-            return "\(sum.dividing(by: PriceService.shared.price).decimal)"
+            return String(format: "%.2f", sum / PriceService.shared.price.floatValue)
         } else {
             return "\(0)"
         }
@@ -24,8 +23,8 @@ final class CountService {
     
     func currencyExchangeFrom(sum: Double?) -> String {
         if let sum = sum, sum > 0 {
-            let sum = Money(sum)
-            return "\(sum.multiplying(by: (CurrencyExchangeService.shared.rate?.value)!).decimal)"
+            let sum = Money(floatLiteral: sum)
+            return "\(sum * (CurrencyExchangeService.shared.rate?.value)!)"
         } else {
             return "\(0)"
         }

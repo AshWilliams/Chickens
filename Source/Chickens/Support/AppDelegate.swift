@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         PriceService.shared.updatePrice()
         CurrencyExchangeService.shared.updateRate()
+        
+        if CommandLine.arguments.contains("--uitesting") {
+            resetState()
+        }
+        
         return true
     }
 
@@ -39,6 +44,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    //MARK: - Helpers
+    
+    func resetState() {
+        //Here you want to clear out your user defaults, your database and any other things you have saved
     }
 }
 

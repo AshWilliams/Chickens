@@ -9,9 +9,13 @@
 /* Begin PBXBuildFile section */
 		2A55E92B1E8121AC00B48E8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A55E9291E8121AC00B48E8B /* Main.storyboard */; };
 		2A55E9301E8121AC00B48E8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A55E92E1E8121AC00B48E8B /* LaunchScreen.storyboard */; };
-		2A55E93B1E8121AC00B48E8B /* ChickensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A55E93A1E8121AC00B48E8B /* ChickensTests.swift */; };
+		2A55E93B1E8121AC00B48E8B /* PriceServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A55E93A1E8121AC00B48E8B /* PriceServiceTests.swift */; };
 		2A55E9461E8121AC00B48E8B /* ChickensUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A55E9451E8121AC00B48E8B /* ChickensUITests.swift */; };
+		2A5786781F60213400A55A5D /* CurrencyExchangeServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5786771F60213400A55A5D /* CurrencyExchangeServiceTests.swift */; };
+		2A5786791F60268D00A55A5D /* CurrencyExchangeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7376411EA622500026C299 /* CurrencyExchangeService.swift */; };
+		2A57867A1F60268D00A55A5D /* CurrencyExchangeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7376411EA622500026C299 /* CurrencyExchangeService.swift */; };
 		2A60C6051EA7694C00F0BCFB /* CountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A60C6041EA7694C00F0BCFB /* CountService.swift */; };
+		2A7322171FB2E9170047C174 /* CountServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7322161FB2E9170047C174 /* CountServiceTests.swift */; };
 		2A7376341EA618890026C299 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7376331EA618890026C299 /* RootViewController.swift */; };
 		2A73763E1EA618FC0026C299 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7376391EA618FC0026C299 /* TFHpple.m */; };
 		2A73763F1EA618FC0026C299 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A73763B1EA618FC0026C299 /* TFHppleElement.m */; };
@@ -28,7 +32,6 @@
 		BB3B91071E812B23000855E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB3B91061E812B23000855E4 /* Assets.xcassets */; };
 		BB3B91081E812B23000855E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB3B91061E812B23000855E4 /* Assets.xcassets */; };
 		BB3B91091E812B23000855E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB3B91061E812B23000855E4 /* Assets.xcassets */; };
-		BB3B910B1E812B2D000855E4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB3B910A1E812B2D000855E4 /* Info.plist */; };
 		BB3B910C1E812B2D000855E4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB3B910A1E812B2D000855E4 /* Info.plist */; };
 		BB3B910D1E812B2D000855E4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB3B910A1E812B2D000855E4 /* Info.plist */; };
 		BB3B910F1E8130A1000855E4 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB3B910E1E8130A1000855E4 /* Settings.plist */; };
@@ -62,12 +65,14 @@
 		2A55E92A1E8121AC00B48E8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A55E92F1E8121AC00B48E8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A55E9361E8121AC00B48E8B /* ChickensTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChickensTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A55E93A1E8121AC00B48E8B /* ChickensTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickensTests.swift; sourceTree = "<group>"; };
+		2A55E93A1E8121AC00B48E8B /* PriceServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceServiceTests.swift; sourceTree = "<group>"; };
 		2A55E93C1E8121AC00B48E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A55E9411E8121AC00B48E8B /* ChickensUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChickensUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A55E9451E8121AC00B48E8B /* ChickensUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickensUITests.swift; sourceTree = "<group>"; };
 		2A55E9471E8121AC00B48E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A5786771F60213400A55A5D /* CurrencyExchangeServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyExchangeServiceTests.swift; sourceTree = "<group>"; };
 		2A60C6041EA7694C00F0BCFB /* CountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountService.swift; path = Chickens/Helpers/CountService.swift; sourceTree = "<group>"; };
+		2A7322161FB2E9170047C174 /* CountServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountServiceTests.swift; sourceTree = "<group>"; };
 		2A7376331EA618890026C299 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootViewController.swift; path = Controller/RootViewController.swift; sourceTree = "<group>"; };
 		2A7376381EA618FC0026C299 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFHpple.h; path = 3rdParty/TFHpple/TFHpple.h; sourceTree = "<group>"; };
 		2A7376391EA618FC0026C299 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFHpple.m; path = 3rdParty/TFHpple/TFHpple.m; sourceTree = "<group>"; };
@@ -166,7 +171,9 @@
 		2A55E9391E8121AC00B48E8B /* ChickensTests */ = {
 			isa = PBXGroup;
 			children = (
-				2A55E93A1E8121AC00B48E8B /* ChickensTests.swift */,
+				2A55E93A1E8121AC00B48E8B /* PriceServiceTests.swift */,
+				2A5786771F60213400A55A5D /* CurrencyExchangeServiceTests.swift */,
+				2A7322161FB2E9170047C174 /* CountServiceTests.swift */,
 				2A55E93C1E8121AC00B48E8B /* Info.plist */,
 			);
 			path = ChickensTests;
@@ -339,7 +346,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Alexander Yakovlev";
 				TargetAttributes = {
 					2A55E9211E8121AC00B48E8B = {
@@ -389,7 +396,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB3B910B1E812B2D000855E4 /* Info.plist in Resources */,
 				2A55E9301E8121AC00B48E8B /* LaunchScreen.storyboard in Resources */,
 				BB3B91071E812B23000855E4 /* Assets.xcassets in Resources */,
 				2A55E92B1E8121AC00B48E8B /* Main.storyboard in Resources */,
@@ -578,8 +584,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB3B91041E812B1D000855E4 /* AppDelegate.swift in Sources */,
-				2A55E93B1E8121AC00B48E8B /* ChickensTests.swift in Sources */,
+				2A55E93B1E8121AC00B48E8B /* PriceServiceTests.swift in Sources */,
 				BB3B90FC1E812AE9000855E4 /* PriceService.swift in Sources */,
+				2A7322171FB2E9170047C174 /* CountServiceTests.swift in Sources */,
+				2A5786781F60213400A55A5D /* CurrencyExchangeServiceTests.swift in Sources */,
+				2A57867A1F60268D00A55A5D /* CurrencyExchangeService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,6 +599,7 @@
 				BB3B91051E812B1D000855E4 /* AppDelegate.swift in Sources */,
 				2A55E9461E8121AC00B48E8B /* ChickensUITests.swift in Sources */,
 				BB3B90FD1E812AE9000855E4 /* PriceService.swift in Sources */,
+				2A5786791F60268D00A55A5D /* CurrencyExchangeService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,7 +647,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -645,7 +657,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -686,7 +702,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -694,7 +712,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -733,7 +755,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Chickens-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -750,7 +772,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = superstartup.Chickens;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Chickens-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

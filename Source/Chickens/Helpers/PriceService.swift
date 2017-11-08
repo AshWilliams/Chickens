@@ -9,23 +9,9 @@
 import UIKit
 import Money
 
-final class PriceService {
+class PriceService {
     
-    static let shared: PriceService = PriceService()
-    
-    var price: Money {
-        get {
-            if let numberPrice = settings!.value(forKey: "Price") as? Double {
-                return Money(numberPrice)
-            } else {
-                return 0
-            }
-        }
-        
-        set {
-            settings?["Price"] = newValue
-        }
-    }
+    //Private
     
     private var settings: NSMutableDictionary? {
         get {
@@ -35,6 +21,24 @@ final class PriceService {
                 }
             }
             return nil
+        }
+    }
+    
+    //Public
+    
+    static let shared: PriceService = PriceService()
+    
+    var price: Money {
+        get {
+            if let numberPrice = settings!.value(forKey: "Price") as? Double {
+                return Money(floatLiteral: numberPrice)
+            } else {
+                return 0
+            }
+        }
+        
+        set {
+            settings?["Price"] = newValue
         }
     }
     
@@ -60,7 +64,7 @@ final class PriceService {
                                 }
                             }
                         }
-                        price = Money(Double(stringPrice)!)
+                        price = Money(floatLiteral: Double(stringPrice)!)
                         //print("[PriceService]: \(price.formatted(withStyle: .currencyPlural, forLocale: .Belarusian))")
                         print("[PriceService]: \(price.decimal)")
                     }
