@@ -8,33 +8,37 @@
 
 import Foundation
 import SwiftyJSON
-import Money
 import Moya_SwiftyJSONMapper
+
+typealias CurrencyPair = (CurrencyType, CurrencyType)?
 
 enum CurrencyType: String {
   case BYN
   case USD
 }
-/*
+
 struct CurrencyExchangeRate: ALSwiftyJSONAble {
   let value: Decimal
-  let pair: (CurrencyType, CurrencyType)
+  let pair: CurrencyPair
   
   init?(jsonData: JSON) {
-    if jsonData["results"]["BYN_USD"]["val"] != JSON.null {
-      self.value = Decimal(jsonData["results"]["BYN_USD"]["val"].double!)
+    if jsonData["results"] != JSON.null {
+      let stringPair = jsonData["results"]
+      self.value = Decimal(stringPair["val"].double!)
+      self.pair = CurrencyExchangeRate.pairFrom(stringPair.stringValue)
     } else {
       self.value = 0.0
+      self.pair = nil
     }
   }
 }
 
 extension CurrencyExchangeRate {
-  func stringFrom(_ pair: (CurrencyType, CurrencyType)) -> String? {
+  static func stringFrom(_ pair: (CurrencyType, CurrencyType)) -> String? {
     return "\(pair.0)_\(pair.1)"
   }
   
-  func pairFrom(_ string: String) -> (CurrencyType, CurrencyType)? {
+  static func pairFrom(_ string: String) -> (CurrencyType, CurrencyType)? {
     let strings = string.components(separatedBy: "_")
     var pair: (CurrencyType, CurrencyType)
     guard let type0 = CurrencyType.init(rawValue: strings[0]), let type1 = CurrencyType.init(rawValue: strings[1]) else {
@@ -45,4 +49,4 @@ extension CurrencyExchangeRate {
     return pair
   }
 }
-*/
+
