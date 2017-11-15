@@ -13,13 +13,7 @@ enum ProductType {
   case apple
 }
 
-protocol Product {
-  var price: Decimal {get}
-  var type: ProductType {get}
-  var icon: String {get}
-}
-
-class Chicken: Product {
+class Chicken: BaseProduct {
   var price: Decimal = 0.0
   var type = ProductType.chicken
   var icon = ""

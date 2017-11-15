@@ -8,14 +8,10 @@
 
 import Foundation
 
-protocol ViewModel {
-  
-}
-
-struct RootViewModel: ViewModel {
+struct RootViewModel: BaseViewModel {
   private var rate: CurrencyExchangeRate
-  private var product: Product
-
+  private var product: BaseProduct
+  
   var sum: String = ""
   var icon: String {
     return self.product.icon
@@ -27,8 +23,8 @@ struct RootViewModel: ViewModel {
     return String(format: "%.2f", (Decimal(string: self.sum)! / self.rate.value) as CVarArg)
   }
   
-  init(rate: CurrencyExchangeRate, product: Product) {
+  init(rate: CurrencyExchangeRate, product: BaseProduct) {
     self.rate = rate
-    self.product = product.icon as! Product
+    self.product = product.icon as! BaseProduct
   }
 }

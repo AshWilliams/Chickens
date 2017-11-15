@@ -9,7 +9,7 @@
 import UIKit
 import ChameleonFramework
 
-class RootViewController: UIViewController {
+class RootViewController: UIViewController, BaseViewController {
   
   convenience init() {
     self.init(viewModel: ViewModel)
@@ -51,6 +51,18 @@ class RootViewController: UIViewController {
     
     navigationController?.navigationBar.barTintColor = UIColor.flatSkyBlue
     navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.flatWhite]
+    
+    handle(BaseError.Network.noInternet)
+  }
+  
+  //MARK: BaseViewController
+  func handle(error: BaseError) {
+    switch error {
+    case BaseError.Network.noInternet:
+      print("")
+    default:
+      print("")
+    }
   }
 }
 

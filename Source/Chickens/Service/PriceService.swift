@@ -14,7 +14,7 @@ class PriceService {
   
   static let shared: PriceService = PriceService()
   
-  func getPrice<T: Product>(for product: T, completion: (Decimal, Error?) -> ()) {
+  func getPrice<T: BaseProduct>(for product: T, completion: (Decimal, Error?) -> ()) {
     if let url = getURL(for: product.type), let data = NSData.init(contentsOf: url) {
       let doc = TFHpple(htmlData: data as Data!)
       if let elements = doc?.search(withXPathQuery: "//div[@class='right']/div[@class='services_wrap']/div[@class='prices_block']/div[@class='price_byn']/div[@class='price']") as? [TFHppleElement] {
