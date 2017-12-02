@@ -46,14 +46,28 @@
 		D70E8BFB1FB6321F00CEA828 /* PriceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70E8BEB1FB62C6D00CEA828 /* PriceService.swift */; };
 		D70E8BFC1FB6322000CEA828 /* PriceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70E8BEB1FB62C6D00CEA828 /* PriceService.swift */; };
 		D70E8BFE1FB6344C00CEA828 /* CurrencyExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70E8BFD1FB6344C00CEA828 /* CurrencyExchangeRate.swift */; };
+		D769E4EC1FC6146F004145FC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77CB66E1FB62B5400597D1D /* MainViewController.swift */; };
+		D769E4ED1FC61482004145FC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77CB66E1FB62B5400597D1D /* MainViewController.swift */; };
+		D769E4EE1FC61483004145FC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77CB66E1FB62B5400597D1D /* MainViewController.swift */; };
+		D77177C41FD1D94F00DCFED6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77177C01FD1D94E00DCFED6 /* LaunchScreen.storyboard */; };
+		D77177C51FD1D94F00DCFED6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77177C21FD1D94E00DCFED6 /* Main.storyboard */; };
+		D77177C91FD2BB8000DCFED6 /* MainViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77177C81FD2BB8000DCFED6 /* MainViewModelTests.swift */; };
 		D77E18281FB89C45004D610B /* CurrencyExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70E8BFD1FB6344C00CEA828 /* CurrencyExchangeRate.swift */; };
 		D77E18291FB89C46004D610B /* CurrencyExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70E8BFD1FB6344C00CEA828 /* CurrencyExchangeRate.swift */; };
-		D77E182B1FB8A93E004D610B /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E182A1FB8A93E004D610B /* RootViewModel.swift */; };
-		D77E182C1FB8A93E004D610B /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E182A1FB8A93E004D610B /* RootViewModel.swift */; };
-		D77E182D1FB8A93E004D610B /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E182A1FB8A93E004D610B /* RootViewModel.swift */; };
+		D77E182B1FB8A93E004D610B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E182A1FB8A93E004D610B /* MainViewModel.swift */; };
+		D77E182C1FB8A93E004D610B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E182A1FB8A93E004D610B /* MainViewModel.swift */; };
+		D77E182D1FB8A93E004D610B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E182A1FB8A93E004D610B /* MainViewModel.swift */; };
 		D77E182F1FB8AAFF004D610B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E182E1FB8AAFF004D610B /* Product.swift */; };
 		D77E18301FB8AAFF004D610B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E182E1FB8AAFF004D610B /* Product.swift */; };
 		D77E18311FB8AAFF004D610B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E182E1FB8AAFF004D610B /* Product.swift */; };
+		D7AFB22F1FC744B90041B73E /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A69535C1FBC93BB00B99EEE /* AppError.swift */; };
+		D7AFB2301FC744B90041B73E /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A69535C1FBC93BB00B99EEE /* AppError.swift */; };
+		D7BBC8C91FC89C8F009CD944 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BBC8C81FC89C8F009CD944 /* RootViewController.swift */; };
+		D7BBC8CA1FC89C8F009CD944 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BBC8C81FC89C8F009CD944 /* RootViewController.swift */; };
+		D7BBC8CB1FC89C8F009CD944 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BBC8C81FC89C8F009CD944 /* RootViewController.swift */; };
+		D7BBC8CD1FC8A2BC009CD944 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BBC8CC1FC8A2BC009CD944 /* UIStoryboard+Extensions.swift */; };
+		D7BBC8CE1FC8A2BC009CD944 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BBC8CC1FC8A2BC009CD944 /* UIStoryboard+Extensions.swift */; };
+		D7BBC8CF1FC8A2BC009CD944 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BBC8CC1FC8A2BC009CD944 /* UIStoryboard+Extensions.swift */; };
 		D7C34A831FB9F77F0044D4AB /* Decimal+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C34A821FB9F77F0044D4AB /* Decimal+Extensions.swift */; };
 		D7C34A841FB9F77F0044D4AB /* Decimal+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C34A821FB9F77F0044D4AB /* Decimal+Extensions.swift */; };
 		D7C34A851FB9F77F0044D4AB /* Decimal+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C34A821FB9F77F0044D4AB /* Decimal+Extensions.swift */; };
@@ -115,12 +129,15 @@
 		C2E8D51A4415758D96588D0E /* Pods-ChickensUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChickensUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChickensUITests/Pods-ChickensUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D70E8BEA1FB62C6D00CEA828 /* CurrencyExchangeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurrencyExchangeService.swift; path = Service/CurrencyExchangeService.swift; sourceTree = "<group>"; };
 		D70E8BEB1FB62C6D00CEA828 /* PriceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PriceService.swift; path = Service/PriceService.swift; sourceTree = "<group>"; };
-		D70E8BF11FB62C9700CEA828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Storyboard/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D70E8BF31FB62C9700CEA828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Storyboard/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D70E8BFD1FB6344C00CEA828 /* CurrencyExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurrencyExchangeRate.swift; path = Model/CurrencyExchangeRate.swift; sourceTree = "<group>"; };
-		D77CB66E1FB62B5400597D1D /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RootViewController.swift; path = View/ViewController/RootViewController.swift; sourceTree = "<group>"; };
-		D77E182A1FB8A93E004D610B /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RootViewModel.swift; path = ViewModel/RootViewModel.swift; sourceTree = "<group>"; };
+		D77177C11FD1D94E00DCFED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D77177C31FD1D94E00DCFED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		D77177C81FD2BB8000DCFED6 /* MainViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTests.swift; sourceTree = "<group>"; };
+		D77CB66E1FB62B5400597D1D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = View/ViewController/MainViewController.swift; sourceTree = "<group>"; };
+		D77E182A1FB8A93E004D610B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewModel.swift; path = ViewModel/MainViewModel.swift; sourceTree = "<group>"; };
 		D77E182E1FB8AAFF004D610B /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Product.swift; path = Model/Product.swift; sourceTree = "<group>"; };
+		D7BBC8C81FC89C8F009CD944 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RootViewController.swift; path = View/ViewController/RootViewController.swift; sourceTree = "<group>"; };
+		D7BBC8CC1FC8A2BC009CD944 /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+Extensions.swift"; path = "Chickens/Extensions/UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
 		D7C34A821FB9F77F0044D4AB /* Decimal+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Decimal+Extensions.swift"; path = "Chickens/Extensions/Decimal+Extensions.swift"; sourceTree = "<group>"; };
 		D9776AAE292D942361119273 /* Pods-Chickens.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chickens.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chickens/Pods-Chickens.debug.xcconfig"; sourceTree = "<group>"; };
 		F9E62F6933C9D66690E889C5 /* Pods-ChickensTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChickensTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChickensTests/Pods-ChickensTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -188,8 +205,8 @@
 				D77CB66A1FB62AB000597D1D /* ViewModel */,
 				D77CB66F1FB62B9D00597D1D /* Service */,
 				2A7376361EA618D50026C299 /* Extensions */,
+				D77177BF1FD1D92700DCFED6 /* Storyboard */,
 				2A7376351EA618C00026C299 /* 3rdParty */,
-				D77CB6701FB62BAE00597D1D /* Storyboard */,
 				BB3B90F71E812A57000855E4 /* Support */,
 			);
 			path = Chickens;
@@ -201,6 +218,7 @@
 				2A55E93A1E8121AC00B48E8B /* PriceServiceTests.swift */,
 				2A5786771F60213400A55A5D /* CurrencyExchangeServiceTests.swift */,
 				2A7322161FB2E9170047C174 /* CountServiceTests.swift */,
+				D77177C81FD2BB8000DCFED6 /* MainViewModelTests.swift */,
 				2A55E93C1E8121AC00B48E8B /* Info.plist */,
 			);
 			path = ChickensTests;
@@ -238,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				D7C34A821FB9F77F0044D4AB /* Decimal+Extensions.swift */,
+				D7BBC8CC1FC8A2BC009CD944 /* UIStoryboard+Extensions.swift */,
 			);
 			name = Extensions;
 			path = ..;
@@ -293,6 +312,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D77177BF1FD1D92700DCFED6 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D77177C01FD1D94E00DCFED6 /* LaunchScreen.storyboard */,
+				D77177C21FD1D94E00DCFED6 /* Main.storyboard */,
+			);
+			name = Storyboard;
+			path = Storyboard/Base.lproj;
+			sourceTree = "<group>";
+		};
 		D77CB6691FB62AA800597D1D /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,7 +334,7 @@
 		D77CB66A1FB62AB000597D1D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				D77E182A1FB8A93E004D610B /* RootViewModel.swift */,
+				D77E182A1FB8A93E004D610B /* MainViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -323,7 +352,8 @@
 		D77CB66C1FB62B4300597D1D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				D77CB66E1FB62B5400597D1D /* RootViewController.swift */,
+				D7BBC8C81FC89C8F009CD944 /* RootViewController.swift */,
+				D77CB66E1FB62B5400597D1D /* MainViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -342,15 +372,6 @@
 				D70E8BEB1FB62C6D00CEA828 /* PriceService.swift */,
 			);
 			name = Service;
-			sourceTree = "<group>";
-		};
-		D77CB6701FB62BAE00597D1D /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				D70E8BF01FB62C9700CEA828 /* LaunchScreen.storyboard */,
-				D70E8BF21FB62C9700CEA828 /* Main.storyboard */,
-			);
-			name = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,7 +446,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Alexander Yakovlev";
 				TargetAttributes = {
 					2A55E9211E8121AC00B48E8B = {
@@ -475,7 +496,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D77177C51FD1D94F00DCFED6 /* Main.storyboard in Resources */,
 				BB3B91071E812B23000855E4 /* Assets.xcassets in Resources */,
+				D77177C41FD1D94F00DCFED6 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,11 +666,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB3B91031E812B1D000855E4 /* AppDelegate.swift in Sources */,
+				D7BBC8C91FC89C8F009CD944 /* RootViewController.swift in Sources */,
 				2A6953541FBC8F5B00B99EEE /* BaseViewModel.swift in Sources */,
 				2A69535D1FBC93BB00B99EEE /* AppError.swift in Sources */,
 				D70E8BFA1FB6321E00CEA828 /* PriceService.swift in Sources */,
 				2A69535F1FBC93D100B99EEE /* BaseError.swift in Sources */,
+				D7BBC8CD1FC8A2BC009CD944 /* UIStoryboard+Extensions.swift in Sources */,
 				D7C34A831FB9F77F0044D4AB /* Decimal+Extensions.swift in Sources */,
+				D769E4EC1FC6146F004145FC /* MainViewController.swift in Sources */,
 				D77E182F1FB8AAFF004D610B /* Product.swift in Sources */,
 				2A6953561FBC8F7300B99EEE /* BaseViewController.swift in Sources */,
 				D70E8BF71FB6321900CEA828 /* CurrencyExchangeService.swift in Sources */,
@@ -655,7 +681,7 @@
 				2A69535B1FBC93A700B99EEE /* BaseProduct.swift in Sources */,
 				2A7376401EA618FC0026C299 /* XPathQuery.m in Sources */,
 				2A73763F1EA618FC0026C299 /* TFHppleElement.m in Sources */,
-				D77E182B1FB8A93E004D610B /* RootViewModel.swift in Sources */,
+				D77E182B1FB8A93E004D610B /* MainViewModel.swift in Sources */,
 				D70E8BFE1FB6344C00CEA828 /* CurrencyExchangeRate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -665,17 +691,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB3B91041E812B1D000855E4 /* AppDelegate.swift in Sources */,
+				D7BBC8CA1FC89C8F009CD944 /* RootViewController.swift in Sources */,
 				2A6953601FBC945A00B99EEE /* BaseViewModel.swift in Sources */,
 				D70E8BFB1FB6321F00CEA828 /* PriceService.swift in Sources */,
 				D7C34A841FB9F77F0044D4AB /* Decimal+Extensions.swift in Sources */,
+				D7AFB22F1FC744B90041B73E /* AppError.swift in Sources */,
+				D7BBC8CE1FC8A2BC009CD944 /* UIStoryboard+Extensions.swift in Sources */,
 				D77E18301FB8AAFF004D610B /* Product.swift in Sources */,
+				D769E4ED1FC61482004145FC /* MainViewController.swift in Sources */,
 				2A6953621FBC945C00B99EEE /* BaseViewController.swift in Sources */,
 				D70E8BF81FB6321A00CEA828 /* CurrencyExchangeService.swift in Sources */,
 				2A55E93B1E8121AC00B48E8B /* PriceServiceTests.swift in Sources */,
 				2A7322171FB2E9170047C174 /* CountServiceTests.swift in Sources */,
 				2A6953641FBC945F00B99EEE /* BaseProduct.swift in Sources */,
 				2A5786781F60213400A55A5D /* CurrencyExchangeServiceTests.swift in Sources */,
-				D77E182C1FB8A93E004D610B /* RootViewModel.swift in Sources */,
+				D77177C91FD2BB8000DCFED6 /* MainViewModelTests.swift in Sources */,
+				D77E182C1FB8A93E004D610B /* MainViewModel.swift in Sources */,
 				D77E18281FB89C45004D610B /* CurrencyExchangeRate.swift in Sources */,
 				2A6953671FBC946200B99EEE /* BaseError.swift in Sources */,
 			);
@@ -685,13 +716,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D77E182D1FB8A93E004D610B /* RootViewModel.swift in Sources */,
+				D77E182D1FB8A93E004D610B /* MainViewModel.swift in Sources */,
 				BB3B91051E812B1D000855E4 /* AppDelegate.swift in Sources */,
 				2A55E9461E8121AC00B48E8B /* ChickensUITests.swift in Sources */,
 				D77E18291FB89C46004D610B /* CurrencyExchangeRate.swift in Sources */,
+				D769E4EE1FC61483004145FC /* MainViewController.swift in Sources */,
+				D7BBC8CB1FC89C8F009CD944 /* RootViewController.swift in Sources */,
 				D70E8BFC1FB6322000CEA828 /* PriceService.swift in Sources */,
+				D7AFB2301FC744B90041B73E /* AppError.swift in Sources */,
 				2A6953631FBC945D00B99EEE /* BaseViewController.swift in Sources */,
 				2A6953611FBC945A00B99EEE /* BaseViewModel.swift in Sources */,
+				D7BBC8CF1FC8A2BC009CD944 /* UIStoryboard+Extensions.swift in Sources */,
 				2A6953661FBC946200B99EEE /* BaseError.swift in Sources */,
 				D70E8BF91FB6321B00CEA828 /* CurrencyExchangeService.swift in Sources */,
 				2A6953651FBC945F00B99EEE /* BaseProduct.swift in Sources */,
@@ -716,18 +751,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D70E8BF01FB62C9700CEA828 /* LaunchScreen.storyboard */ = {
+		D77177C01FD1D94E00DCFED6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D70E8BF11FB62C9700CEA828 /* Base */,
+				D77177C11FD1D94E00DCFED6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		D70E8BF21FB62C9700CEA828 /* Main.storyboard */ = {
+		D77177C21FD1D94E00DCFED6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D70E8BF31FB62C9700CEA828 /* Base */,
+				D77177C31FD1D94E00DCFED6 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -842,6 +877,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D9776AAE292D942361119273 /* Pods-Chickens.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4VQ48U3YP6;
@@ -860,6 +896,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 74672ADC3977D57AE0C226E5 /* Pods-Chickens.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4VQ48U3YP6;
@@ -887,7 +924,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ChickensTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chickens.app/Chickens";
 			};
 			name = Debug;
@@ -905,7 +942,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = superstartup.ChickensTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ChickensTests-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chickens.app/Chickens";
 			};
 			name = Release;
@@ -923,7 +960,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ChickensUITests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = Chickens;
 			};
 			name = Debug;
@@ -940,7 +977,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = superstartup.ChickensUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ChickensUITests-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = Chickens;
 			};
 			name = Release;

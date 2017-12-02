@@ -9,5 +9,7 @@
 import Foundation
 
 protocol BaseError: Error {
-  
+  associatedtype T
+  var type: T {get}
+  var description: String {get}
 }

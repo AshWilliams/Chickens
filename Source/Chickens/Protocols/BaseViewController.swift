@@ -9,5 +9,7 @@
 import Foundation
 
 protocol BaseViewController {
-  func handle(error: BaseError)
+  associatedtype M
+  var viewModel: M {get set}
+  func handle(error: AppError)
 }

@@ -1,19 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="K1t-CB-Kxe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9yq-2N-zcY">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Root View Controller-->
+        <scene sceneID="whc-F8-Zvb">
+            <objects>
+                <viewController storyboardIdentifier="RootViewController" id="RcQ-UA-iCU" customClass="RootViewController" customModule="Chickens" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hqt-8x-7Fh"/>
+                        <viewControllerLayoutGuide type="bottom" id="1jI-WL-Dpo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dM6-hW-Ol4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.84313732389999996" green="0.93333339689999995" blue="0.95686280729999995" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mf2-lK-mgm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W2b-qt-FT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="685.60000000000002" y="148.87556221889056"/>
+        </scene>
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="RootViewController" customModule="Chickens" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="Chickens" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -23,7 +42,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2s7-ay-3xP">
-                                <rect key="frame" x="16" y="80" width="343" height="136"/>
+                                <rect key="frame" x="16" y="36" width="343" height="136"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uOv-hF-CHn">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
@@ -120,25 +139,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
+            <point key="canvasLocation" x="1418" y="149"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="SYm-ji-cyv">
+        <scene sceneID="BLu-t9-NVF">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="K1t-CB-Kxe" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9yq-2N-zcY" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ynt-HH-KG4">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tYp-fW-iKe">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PRn-m6-gUk"/>
+                        <segue destination="RcQ-UA-iCU" kind="relationship" relationship="rootViewController" id="jiQ-Pe-DWI"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qfs-Qj-1wY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9wS-Xy-kGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="-560.86956521739137"/>
+            <point key="canvasLocation" x="6" y="149"/>
         </scene>
     </scenes>
     <resources>

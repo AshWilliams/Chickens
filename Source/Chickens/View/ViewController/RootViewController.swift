@@ -2,79 +2,47 @@
 //  RootViewController.swift
 //  Chickens
 //
-//  Created by Alexander Yakovlev on 3/21/17.
+//  Created by Sasha Kid on 11/24/17.
 //  Copyright © 2017 Alexander Yakovlev. All rights reserved.
 //
 
 import UIKit
-import ChameleonFramework
 
-class RootViewController: UIViewController, BaseViewController {
-  
-  convenience init() {
-    self.init(viewModel: ViewModel)
-  }
-  
-  init(viewModel: ViewModel?) {
-    self.viewModel = viewModel
-    super.init(nibName: nil, bundle: nil)
-  }
-  
-  var viewModel: RootViewModel!
-  
-  @IBOutlet weak var sumTextfield: UITextField! {
-    didSet {
-      sumTextfield.text = ""
-      sumTextfield.becomeFirstResponder()
-    }
-  }
-  
-  @IBOutlet weak var exchangeTextfield: UITextField! {
-    didSet {
-      exchangeTextfield.text = "\(0)"
-    }
-  }
-  
-  @IBOutlet weak var chickenTextfield: UITextField! {
-    didSet {
-      chickenTextfield.text = "\(0)"
-    }
-  }
-  //MARK: UIViewController
+class RootViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    self.setStatusBarStyle(UIStatusBarStyleContrast)
-    
-    self.title = "Chickens"
-    
     navigationController?.navigationBar.barTintColor = UIColor.flatSkyBlue
     navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.flatWhite]
     
-    handle(BaseError.Network.noInternet)
-  }
-  
-  //MARK: BaseViewController
-  func handle(error: BaseError) {
-    switch error {
-    case BaseError.Network.noInternet:
-      print("")
-    default:
-      print("")
+    var currencyRate: CurrencyExchangeRate?
+    let dispatchGroup = DispatchGroup()
+    
+    dispatchGroup.enter()
+    CurrencyExchangeService.shared.getRate(for: (.BYN, .USD)) { (rate, error) in
+      if let rate = rate {
+        currencyRate = rate
+      }
+      dispatchGroup.leave()
     }
-  }
-}
-
-extension RootViewController: UITextFieldDelegate {
-  func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-    if textField == sumTextfield {
-      let currentString = (textField.text as NSString?)?.replacingCharacters(in: range, with: string) ?? string
-      chickenTextfield.text = CountService.shared.chickensFrom(sum: Double(currentString))
-      exchangeTextfield.text = CountService.shared.currencyExchangeFrom(sum: Double(currentString))
-      return true
-    } else {
-      return false
+    
+    dispatchGroup.enter()
+    let chicken = Chicken()
+    PriceService.shared.getPrice(for: chicken) { (price, error) in
+      chicken.price = price
+      dispatchGroup.leave()
+    }
+    
+    dispatchGroup.notify(queue: .main) { [weak self] in
+      if let currencyRate =  currencyRate {
+        let viewModel = MainViewModel(rate: currencyRate, product: chicken)
+        guard let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainViewController") as? MainViewController else {
+          return
+        }
+        viewController.viewModel = viewModel
+        self?.navigationController?.pushViewController(viewController, animated: false)
+      }
     }
   }
 }

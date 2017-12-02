@@ -19,23 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       resetState()
     }
     
-    let dispatchGroup = DispatchGroup()
-    
-    dispatchGroup.enter()
-    CurrencyExchangeService.shared.getRate(for: (.BYN, .USD)) { (rate, error) in
-      
-    }
-    
-    dispatchGroup.enter()
-    let chicken = Chicken()
-    PriceService.shared.getPrice(for: chicken) { (price, error) in
-      
-    }
-    
-    dispatchGroup.notify(queue: .main) {
-      
-    }
-    
     return true
   }
   

@@ -38,7 +38,7 @@ extension CurrencyExchange: TargetType {
     }
   }
   
-  var parameters: [String : Any]? {
+  var parameters: [String : Any] {
     switch self {
     case .pair(let from, let to):
       return ["q" : "\(from)_\(to)"]
@@ -55,7 +55,7 @@ extension CurrencyExchange: TargetType {
   var task: Task {
     switch self {
     case .pair:
-      return .requestParameters(parameters: parameters!, encoding: parameterEncoding)
+      return .requestParameters(parameters: parameters, encoding: parameterEncoding)
     }
   }
   

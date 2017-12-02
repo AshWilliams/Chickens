@@ -18,17 +18,19 @@ enum CurrencyType: String {
 }
 
 struct CurrencyExchangeRate: ALSwiftyJSONAble {
-  let value: Decimal
-  let pair: CurrencyPair
+  var value: Decimal = 0.0
+  var pair: CurrencyPair = nil
   
   init?(jsonData: JSON) {
     if jsonData["results"] != JSON.null {
-      let stringPair = jsonData["results"]
-      self.value = Decimal(stringPair["val"].double!)
-      self.pair = CurrencyExchangeRate.pairFrom(stringPair.stringValue)
-    } else {
-      self.value = 0.0
-      self.pair = nil
+      let dictionary = jsonData["results"]
+      for (pairString, _) in dictionary {
+        if let doubleValue = dictionary[pairString]["val"].double, let pair = CurrencyExchangeRate.pairFrom(pairString) {
+          self.pair = pair
+          self.value = Decimal(doubleValue)
+          break
+        }
+      }
     }
   }
 }
@@ -40,10 +42,10 @@ extension CurrencyExchangeRate {
   
   static func pairFrom(_ string: String) -> (CurrencyType, CurrencyType)? {
     let strings = string.components(separatedBy: "_")
-    var pair: (CurrencyType, CurrencyType)
     guard let type0 = CurrencyType.init(rawValue: strings[0]), let type1 = CurrencyType.init(rawValue: strings[1]) else {
       return nil
     }
+    var pair: (CurrencyType, CurrencyType)
     pair.0 = type0
     pair.1 = type1
     return pair

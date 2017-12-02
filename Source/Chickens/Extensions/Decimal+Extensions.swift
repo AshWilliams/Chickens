@@ -9,11 +9,23 @@
 import Foundation
 
 extension Decimal {
+  /*
   func toCurrency() -> String {
     let currencyFormatter = NumberFormatter()
     currencyFormatter.usesGroupingSeparator = true
     currencyFormatter.numberStyle = .currency
     currencyFormatter.locale = Locale(identifier: "en_US")
     return currencyFormatter.string(from: self as NSDecimalNumber)!
+  }
+ */
+  func toString() -> String? {
+    let formatter = NumberFormatter()
+    formatter.maximumFractionDigits = 2
+    formatter.roundingMode = .up
+    formatter.generatesDecimalNumbers = true
+    guard let string = formatter.string(for: self) else {
+      return nil
+    }
+    return string
   }
 }

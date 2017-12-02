@@ -16,6 +16,6 @@ enum ProductType {
 class Chicken: BaseProduct {
   var price: Decimal = 0.0
   var type = ProductType.chicken
-  var icon = ""
+  var icon: String = ""
 }
 

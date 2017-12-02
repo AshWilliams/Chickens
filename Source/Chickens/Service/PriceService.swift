@@ -14,28 +14,36 @@ class PriceService {
   
   static let shared: PriceService = PriceService()
   
-  func getPrice<T: BaseProduct>(for product: T, completion: (Decimal, Error?) -> ()) {
-    if let url = getURL(for: product.type), let data = NSData.init(contentsOf: url) {
-      let doc = TFHpple(htmlData: data as Data!)
-      if let elements = doc?.search(withXPathQuery: "//div[@class='right']/div[@class='services_wrap']/div[@class='prices_block']/div[@class='price_byn']/div[@class='price']") as? [TFHppleElement] {
-        for element in elements {
-          let components = element.content.components(separatedBy:".")
-          var stringPrice = ""
-          for (i, component) in components.enumerated() {
-            if let newComponent = Int(component.components(separatedBy: CharacterSet.decimalDigits.inverted).joined(separator: "")) {
-              if !component.isEmpty {
-                switch i {
-                case 0:
-                  stringPrice.append("\(newComponent).")
-                case 1:
-                  stringPrice.append("\(newComponent)")
-                default:
-                  break
-                }
+  func getPrice(for product: BaseProduct, completion: (Decimal, AppError?) -> Void) {
+    guard let url = getURL(for: product.type), let data = NSData.init(contentsOf: url) else {
+      completion(0.0, nil)
+      return
+    }
+    let doc = TFHpple(htmlData: data as Data!)
+    if let elements = doc?.search(withXPathQuery: "//div[@class='right']/div[@class='services_wrap']/div[@class='prices_block']/div[@class='price_byn']/div[@class='price']") as? [TFHppleElement] {
+      for element in elements {
+        let components = element.content.components(separatedBy:".")
+        var stringPrice = ""
+        for (i, component) in components.enumerated() {
+          if let newComponent = Int(component.components(separatedBy: CharacterSet.decimalDigits.inverted).joined(separator: "")) {
+            if !component.isEmpty {
+              switch i {
+              case 0:
+                stringPrice.append("\(newComponent).")
+              case 1:
+                stringPrice.append("\(newComponent)")
+              default:
+                break
               }
             }
           }
-          completion(Decimal(string: stringPrice)!, nil)
+        }
+        if !stringPrice.isEmpty {
+          guard let price = Decimal(string: stringPrice) else {
+            completion(0.0, nil)
+            return
+          }
+          completion(price, nil)
           print("[PriceService]: \(stringPrice)")
         }
       }
