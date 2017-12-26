@@ -21,7 +21,7 @@
                     <view key="view" contentMode="scaleToFill" id="dM6-hW-Ol4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.84313732389999996" green="0.93333339689999995" blue="0.95686280729999995" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="mf2-lK-mgm"/>
                 </viewController>

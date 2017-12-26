@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RootViewController: UIViewController {
+class RootViewController: UIViewController, Loadable {
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -16,6 +16,8 @@ class RootViewController: UIViewController {
     navigationController?.navigationBar.barTintColor = UIColor.flatSkyBlue
     navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.flatWhite]
     
+    startActivity()
+
     var currencyRate: CurrencyExchangeRate?
     let dispatchGroup = DispatchGroup()
     
@@ -35,6 +37,8 @@ class RootViewController: UIViewController {
     }
     
     dispatchGroup.notify(queue: .main) { [weak self] in
+      self?.stopActivity()
+
       if let currencyRate =  currencyRate {
         let viewModel = MainViewModel(rate: currencyRate, product: chicken)
         guard let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainViewController") as? MainViewController else {

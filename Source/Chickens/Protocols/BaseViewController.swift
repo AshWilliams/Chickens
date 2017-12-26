@@ -7,6 +7,22 @@
 //
 
 import Foundation
+import UIKit
+
+protocol Loadable {
+  func startActivity()
+  func stopActivity()
+}
+
+extension Loadable {
+  func startActivity() {
+    UIApplication.shared.isNetworkActivityIndicatorVisible = true
+  }
+  
+  func stopActivity() {
+    UIApplication.shared.isNetworkActivityIndicatorVisible = false
+  }
+}
 
 protocol BaseViewController {
   associatedtype M

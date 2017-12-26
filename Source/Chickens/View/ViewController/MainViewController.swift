@@ -34,8 +34,9 @@ class MainViewController: UIViewController, BaseViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-        
-    self.title = "Chickens"
+    
+    navigationItem.hidesBackButton = true
+    title = "Chickens"
   }
   
   //MARK: BaseViewController

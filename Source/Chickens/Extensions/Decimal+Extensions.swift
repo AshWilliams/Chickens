@@ -20,9 +20,9 @@ extension Decimal {
  */
   func toString() -> String? {
     let formatter = NumberFormatter()
+    formatter.minimumFractionDigits = 2
     formatter.maximumFractionDigits = 2
-    formatter.roundingMode = .up
-    formatter.generatesDecimalNumbers = true
+    formatter.locale = Locale.current
     guard let string = formatter.string(for: self) else {
       return nil
     }
