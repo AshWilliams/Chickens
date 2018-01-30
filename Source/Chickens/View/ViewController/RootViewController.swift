@@ -40,11 +40,13 @@ class RootViewController: UIViewController, Loadable {
       self?.stopActivity()
 
       if let currencyRate =  currencyRate {
-        let viewModel = MainViewModel(rate: currencyRate, product: chicken)
         guard let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainViewController") as? MainViewController else {
           return
         }
-        viewController.viewModel = viewModel
+        guard let viewModel = MainViewModel(rate: currencyRate, product: chicken) else {
+          return
+        }
+        viewController.inject(viewModel: viewModel)
         self?.navigationController?.pushViewController(viewController, animated: false)
       }
     }

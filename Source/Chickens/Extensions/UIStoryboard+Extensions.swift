@@ -10,11 +10,9 @@ import Foundation
 import UIKit
 
 extension UIStoryboard {
-  /*
-  func instantiateViewController<M: BaseViewModel, V: BaseViewController>(withIdentifier identifier: String, viewModel: M) -> V? {
-    var viewController = instantiateViewController(withIdentifier: identifier) as? V
-    viewController?.viewModel = viewModel
-    return viewController
-  }
- */
+//  func createViewController<M, V>(withIdentifier identifier: String, viewModel: M) -> V? where V: UIViewController, V: BaseViewController {
+//    var viewController = instantiateViewController(withIdentifier: identifier) as? V
+//    viewController?.viewModel = viewModel as! BaseViewModel
+//    return viewController
+//  }
 }

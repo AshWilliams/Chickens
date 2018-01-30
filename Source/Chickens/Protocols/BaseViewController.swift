@@ -25,7 +25,8 @@ extension Loadable {
 }
 
 protocol BaseViewController {
-  associatedtype M
-  var viewModel: M {get set}
+  associatedtype T
+  func inject(viewModel: T)
+  func assertDependencies()
   func handle(error: AppError)
 }

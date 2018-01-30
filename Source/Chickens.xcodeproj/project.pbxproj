@@ -46,6 +46,12 @@
 		D70E8BFB1FB6321F00CEA828 /* PriceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70E8BEB1FB62C6D00CEA828 /* PriceService.swift */; };
 		D70E8BFC1FB6322000CEA828 /* PriceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70E8BEB1FB62C6D00CEA828 /* PriceService.swift */; };
 		D70E8BFE1FB6344C00CEA828 /* CurrencyExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70E8BFD1FB6344C00CEA828 /* CurrencyExchangeRate.swift */; };
+		D71CEE33200D14C800AA30F9 /* InputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71CEE32200D14C800AA30F9 /* InputCell.swift */; };
+		D71CEE35200D14FB00AA30F9 /* OutputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71CEE34200D14FB00AA30F9 /* OutputCell.swift */; };
+		D71CEE36200D150300AA30F9 /* InputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71CEE32200D14C800AA30F9 /* InputCell.swift */; };
+		D71CEE37200D150300AA30F9 /* InputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71CEE32200D14C800AA30F9 /* InputCell.swift */; };
+		D71CEE38200D150600AA30F9 /* OutputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71CEE34200D14FB00AA30F9 /* OutputCell.swift */; };
+		D71CEE39200D150600AA30F9 /* OutputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71CEE34200D14FB00AA30F9 /* OutputCell.swift */; };
 		D769E4EC1FC6146F004145FC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77CB66E1FB62B5400597D1D /* MainViewController.swift */; };
 		D769E4ED1FC61482004145FC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77CB66E1FB62B5400597D1D /* MainViewController.swift */; };
 		D769E4EE1FC61483004145FC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77CB66E1FB62B5400597D1D /* MainViewController.swift */; };
@@ -130,6 +136,8 @@
 		D70E8BEA1FB62C6D00CEA828 /* CurrencyExchangeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurrencyExchangeService.swift; path = Service/CurrencyExchangeService.swift; sourceTree = "<group>"; };
 		D70E8BEB1FB62C6D00CEA828 /* PriceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PriceService.swift; path = Service/PriceService.swift; sourceTree = "<group>"; };
 		D70E8BFD1FB6344C00CEA828 /* CurrencyExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurrencyExchangeRate.swift; path = Model/CurrencyExchangeRate.swift; sourceTree = "<group>"; };
+		D71CEE32200D14C800AA30F9 /* InputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InputCell.swift; path = View/Cell/InputCell.swift; sourceTree = "<group>"; };
+		D71CEE34200D14FB00AA30F9 /* OutputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OutputCell.swift; path = View/Cell/OutputCell.swift; sourceTree = "<group>"; };
 		D77177C11FD1D94E00DCFED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D77177C31FD1D94E00DCFED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		D77177C81FD2BB8000DCFED6 /* MainViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTests.swift; sourceTree = "<group>"; };
@@ -361,6 +369,8 @@
 		D77CB66D1FB62B4800597D1D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				D71CEE32200D14C800AA30F9 /* InputCell.swift */,
+				D71CEE34200D14FB00AA30F9 /* OutputCell.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -446,7 +456,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Alexander Yakovlev";
 				TargetAttributes = {
 					2A55E9211E8121AC00B48E8B = {
@@ -681,6 +691,8 @@
 				2A69535B1FBC93A700B99EEE /* BaseProduct.swift in Sources */,
 				2A7376401EA618FC0026C299 /* XPathQuery.m in Sources */,
 				2A73763F1EA618FC0026C299 /* TFHppleElement.m in Sources */,
+				D71CEE35200D14FB00AA30F9 /* OutputCell.swift in Sources */,
+				D71CEE33200D14C800AA30F9 /* InputCell.swift in Sources */,
 				D77E182B1FB8A93E004D610B /* MainViewModel.swift in Sources */,
 				D70E8BFE1FB6344C00CEA828 /* CurrencyExchangeRate.swift in Sources */,
 			);
@@ -692,6 +704,7 @@
 			files = (
 				BB3B91041E812B1D000855E4 /* AppDelegate.swift in Sources */,
 				D7BBC8CA1FC89C8F009CD944 /* RootViewController.swift in Sources */,
+				D71CEE38200D150600AA30F9 /* OutputCell.swift in Sources */,
 				2A6953601FBC945A00B99EEE /* BaseViewModel.swift in Sources */,
 				D70E8BFB1FB6321F00CEA828 /* PriceService.swift in Sources */,
 				D7C34A841FB9F77F0044D4AB /* Decimal+Extensions.swift in Sources */,
@@ -700,6 +713,7 @@
 				D77E18301FB8AAFF004D610B /* Product.swift in Sources */,
 				D769E4ED1FC61482004145FC /* MainViewController.swift in Sources */,
 				2A6953621FBC945C00B99EEE /* BaseViewController.swift in Sources */,
+				D71CEE36200D150300AA30F9 /* InputCell.swift in Sources */,
 				D70E8BF81FB6321A00CEA828 /* CurrencyExchangeService.swift in Sources */,
 				2A55E93B1E8121AC00B48E8B /* PriceServiceTests.swift in Sources */,
 				2A7322171FB2E9170047C174 /* CountServiceTests.swift in Sources */,
@@ -718,6 +732,7 @@
 			files = (
 				D77E182D1FB8A93E004D610B /* MainViewModel.swift in Sources */,
 				BB3B91051E812B1D000855E4 /* AppDelegate.swift in Sources */,
+				D71CEE39200D150600AA30F9 /* OutputCell.swift in Sources */,
 				2A55E9461E8121AC00B48E8B /* ChickensUITests.swift in Sources */,
 				D77E18291FB89C46004D610B /* CurrencyExchangeRate.swift in Sources */,
 				D769E4EE1FC61483004145FC /* MainViewController.swift in Sources */,
@@ -726,6 +741,7 @@
 				D7AFB2301FC744B90041B73E /* AppError.swift in Sources */,
 				2A6953631FBC945D00B99EEE /* BaseViewController.swift in Sources */,
 				2A6953611FBC945A00B99EEE /* BaseViewModel.swift in Sources */,
+				D71CEE37200D150300AA30F9 /* InputCell.swift in Sources */,
 				D7BBC8CF1FC8A2BC009CD944 /* UIStoryboard+Extensions.swift in Sources */,
 				2A6953661FBC946200B99EEE /* BaseError.swift in Sources */,
 				D70E8BF91FB6321B00CEA828 /* CurrencyExchangeService.swift in Sources */,
